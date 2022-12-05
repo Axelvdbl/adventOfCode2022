@@ -27,7 +27,6 @@ def get_choose_hand_shape_score(round)
     score = get_first_party_round_score(round.split(" ")[0] + " " + hand_shape)
     return get_hand_shape_score(hand_shape) if score == get_second_party_round_score(round)
   end
-  round.split(" ")[0].codepoints[0].to_i
 end
 
 def get_second_party_round_score(round)
